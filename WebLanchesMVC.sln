@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLanchesMVC", "WebLanchesMVC.csproj", "{62022EEF-BB2D-4754-BCB6-F2DEA0D32275}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62022EEF-BB2D-4754-BCB6-F2DEA0D32275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62022EEF-BB2D-4754-BCB6-F2DEA0D32275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62022EEF-BB2D-4754-BCB6-F2DEA0D32275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62022EEF-BB2D-4754-BCB6-F2DEA0D32275}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB3EDD25-8AE9-4594-8D2B-E8D6C56A409E}
+	EndGlobalSection
+EndGlobal
