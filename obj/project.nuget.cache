@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "63zknap3dRJVj0lYhN9NHXZQ1alF/aUOwGF0xYMKjK+jAhqiGR6iElX8L9+NXk0wNhcNYgjpeHlUiibk+jSL4A==",
+  "dgSpecHash": "Ylv9U6Hv4+gUeV8fnqiUfZdSqvdoNoMhJRc+dSXMmfKskOhbUC71EA1h5lt/CJS3kw+P7PYgCgnfKblXtuqbMA==",
   "success": true,
-  "projectFilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj",
+  "projectFilePath": "D:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nilso_000\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\nilso_000\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

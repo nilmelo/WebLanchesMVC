@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj": {}
+    "D:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj": {}
   },
   "projects": {
-    "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj": {
+    "D:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj",
+        "projectUniqueName": "D:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj",
         "projectName": "WebLanchesMVC",
-        "projectPath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj",
+        "projectPath": "D:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj",
         "packagesPath": "C:\\Users\\nilso_000\\.nuget\\packages\\",
-        "outputPath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\obj\\",
+        "outputPath": "D:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
