@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebLanchesMVC.Context;
+using WebLanchesMVC.Repositories;
 
 namespace WebLanchesMVC
 {
@@ -27,6 +28,10 @@ namespace WebLanchesMVC
         {
 			services.AddDbContext<AppDbContext>(options =>
 				options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+			services.AddTransient<ICategoryRepository, CategoryRepository>();
+			services.AddTransient<ILunchRepository, LunchRepository>();
+
             services.AddControllersWithViews();
         }
 
