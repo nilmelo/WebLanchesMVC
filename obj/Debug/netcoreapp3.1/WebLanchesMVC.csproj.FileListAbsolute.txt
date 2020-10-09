@@ -67,3 +67,4 @@ D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\bin\Debug\netcoreapp3.1\runtimes\unix\
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Lunch\List.cshtml.g.cs
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LunchesResume.cshtml.g.cs

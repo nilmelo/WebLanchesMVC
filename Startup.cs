@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebLanchesMVC.Context;
+using WebLanchesMVC.Models;
 using WebLanchesMVC.Repositories;
 
 namespace WebLanchesMVC
@@ -31,7 +33,9 @@ namespace WebLanchesMVC
 
 			services.AddTransient<ICategoryRepository, CategoryRepository>();
 			services.AddTransient<ILunchRepository, LunchRepository>();
+			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+			services.AddScoped(cp => CartPurchase.GetCart(cp));
             services.AddControllersWithViews();
         }
 
@@ -50,6 +54,7 @@ namespace WebLanchesMVC
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+			app.UseSession();
 
             app.UseRouting();
 
