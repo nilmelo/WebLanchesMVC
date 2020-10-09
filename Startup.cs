@@ -37,6 +37,9 @@ namespace WebLanchesMVC
 
 			services.AddScoped(cp => CartPurchase.GetCart(cp));
             services.AddControllersWithViews();
+
+			services.AddMemoryCache();
+			services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

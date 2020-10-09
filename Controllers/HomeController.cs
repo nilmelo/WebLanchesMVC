@@ -6,28 +6,29 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WebLanchesMVC.Models;
+using WebLanchesMVC.Repositories;
+using WebLanchesMVC.ViewModel;
 
 namespace WebLanchesMVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+		private readonly ILunchRepository _lunchRepository;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+		public HomeController(ILunchRepository lunchRepository)
+		{
+			_lunchRepository = lunchRepository;
+		}
 
         public IActionResult Index()
         {
-            return View();
+			var homeViewModel = new HomeViewModel
+			{
+				LunchesPreferred = _lunchRepository.LunchesPreferred
+			};
+
+            return View(homeViewModel);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        
     }
 }
