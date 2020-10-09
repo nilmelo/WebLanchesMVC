@@ -14435,6 +14435,11 @@
       "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Lunch\\List.cshtml",
       "TargetPath": "Views\\Lunch\\List.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\CartPurchase\\Index.cshtml",
+      "TargetPath": "Views\\CartPurchase\\Index.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
