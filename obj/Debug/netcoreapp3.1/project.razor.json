@@ -14407,6 +14407,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Shared\\_LunchesResume.cshtml",
+      "TargetPath": "Views\\Shared\\_LunchesResume.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -14424,6 +14429,11 @@
     {
       "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Lunch\\List.cshtml",
+      "TargetPath": "Views\\Lunch\\List.cshtml",
       "FileKind": "mvc"
     }
   ],

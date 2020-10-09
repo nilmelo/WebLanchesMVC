@@ -1,0 +1,10 @@
+@model LunchListViewModel
+
+<h2>@Model.CategoryCurrent</h2>
+
+<div class="row">
+	@foreach (Lunch lunch in Model.Lunches)
+	{
+		<partial name="_LunchesResume" for="@lunch" />
+	}
+</div>
