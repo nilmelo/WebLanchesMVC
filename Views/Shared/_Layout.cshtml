@@ -21,6 +21,7 @@
                         <li>
                             <a asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+						@await Component.InvokeAsync("CategoryMenu");
                         <li>
                             <a asp-controller="Contact" asp-action="Index">Contato</a>
                         </li>

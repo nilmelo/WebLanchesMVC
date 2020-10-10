@@ -71,3 +71,5 @@ D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Ca
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Carousel.cshtml.g.cs
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Component\CartPurchaseResume\Default.cshtml.g.cs
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Component\CategoryMenu\Default.cshtml.g.cs
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Lunch\Details.cshtml.g.cs

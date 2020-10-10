@@ -53,5 +53,17 @@ namespace WebLanchesMVC.Controllers
 
 			return View(lunchesListViewModel);
 		}
+
+		public IActionResult Details(int lunchId)
+		{
+			var lunch = _lunchRepository.Lunches.FirstOrDefault(l => l.Id == lunchId);
+
+			if(lunch == null)
+			{
+				return View("~/Views/Error/Error.cshtml");
+			}
+			return View(lunch);
+		}
+
     }
 }

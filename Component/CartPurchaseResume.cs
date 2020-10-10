@@ -16,11 +16,7 @@ namespace WebLanchesMVC.Component
 
 		public IViewComponentResult Invoke()
 		{
-			//var items = _cartPurchase.GetCartPurchaseItems();
-
-			// TESTE Itens no carrinho
-			var items = new List<CartPurchaseItem>(){ new CartPurchaseItem(), new CartPurchaseItem() };
-			//
+			var items = _cartPurchase.GetCartPurchaseItems();
 
 			_cartPurchase.CartPurchaseItens = items;
 

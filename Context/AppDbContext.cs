@@ -10,5 +10,7 @@ namespace WebLanchesMVC.Context
        public DbSet<Lunch> Lunches { get; set; }
        public DbSet<Category> Categories { get; set; }
 	   public DbSet<CartPurchaseItem> CartPurchaseItens { get; set; }
+	   public DbSet<Order> Orders { get; set; }
+	   public DbSet<OrderDetail> OrderDetails { get; set; }
     }
 }

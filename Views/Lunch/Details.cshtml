@@ -1,0 +1,26 @@
+@model Lunch
+
+<div class="container marginTop">
+        <div class="row">
+            <div class="card">
+                <div class="text-center view overlay hm-white-slight">
+                    <img src="@Model.ImageURL" class="img-fluid" alt="">
+                    <a href="#">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                </div>
+                <div class="card-block">
+                    <!--Title-->
+                    <h2 class="card-title">@Model.Name</h2>
+                    <!--Text-->
+                    <p class="card-text"><h3>@Model.DescriptionShort</h3></p>
+                    <p class="btn btn-group pull-right">
+                        <a asp-controller="Lunch" asp-action="List" class="btn btn-default">Ver todos os lanches</a>
+                        <a class="btn btn-primary" id="cartButton" asp-controller="CartPurchase" asp-action="AddItemInCartPurchase" asp-route-Id="@Model.Id">
+                            Adicionar @Model.Name ao carrinho
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>

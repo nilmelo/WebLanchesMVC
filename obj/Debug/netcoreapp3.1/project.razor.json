@@ -12473,6 +12473,23 @@
         }
       },
       {
+        "HashCode": 799777337,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__CategoryMenuViewComponentTagHelper",
+        "AssemblyName": "WebLanchesMVC",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:category-menu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__CategoryMenuViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "CategoryMenu"
+        }
+      },
+      {
         "HashCode": 1912741130,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -14490,6 +14507,16 @@
     {
       "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Lunch\\List.cshtml",
       "TargetPath": "Views\\Lunch\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Shared\\Component\\CategoryMenu\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Component\\CategoryMenu\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Lunch\\Details.cshtml",
+      "TargetPath": "Views\\Lunch\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

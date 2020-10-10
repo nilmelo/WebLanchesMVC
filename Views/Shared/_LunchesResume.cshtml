@@ -6,7 +6,16 @@
 	</div>
 	<div class="caption">
 		<h3 class="pull-righ">@Model.Price.ToString("c")</h3>
-		<h3>@Model.Name</h3>
+		<h3>
+			<a asp-controller="Lunch" asp-action="Details" asp-route-Id="@Model.Id">@Model.Name</a>
+		</h3>
 		<p>@Model.DescriptionShort</p>
+	</div>
+	<div class="addToCart text-right">
+		<p class="button">
+			<a class="btn btn-primary" id="cartButton" asp-controller="CartPurchase" asp-action="AddItemInCartPurchase" asp-route-Id="@Model.Id">
+				Incluir no Carrinho
+			</a>
+		</p>
 	</div>
 </div>
