@@ -65,6 +65,11 @@ namespace WebLanchesMVC
 
             app.UseEndpoints(endpoints =>
             {
+				endpoints.MapControllerRoute(
+                    name: "categoryFilter",
+					pattern: "Lunch/{action}/{category?}",
+                    defaults: new { Controller = "Lunch", action = "List" });
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

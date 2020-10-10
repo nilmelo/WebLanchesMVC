@@ -70,3 +70,4 @@ D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Sh
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\CartPurchase\Index.cshtml.g.cs
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Carousel.cshtml.g.cs
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Component\CartPurchaseResume\Default.cshtml.g.cs
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs

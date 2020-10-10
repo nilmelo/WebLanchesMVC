@@ -1,4 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using WebLanchesMVC.Models;
 using WebLanchesMVC.Repositories;
 using WebLanchesMVC.ViewModel;
 
@@ -15,15 +19,39 @@ namespace WebLanchesMVC.Controllers
 			_categoryRepository = categoryRepository;
 		}
 
-		public IActionResult List()
+		public IActionResult List(string category)
 		{
-			ViewBag.Lunch = "Lunches";
-			ViewData["Category"] = "Category";
+			string _category = category;
+			IEnumerable<Lunch> lunches;
+			string categoryCurrent = string.Empty;
 
-			var lunchListViewModel = new LunchListViewModel();
-			lunchListViewModel.Lunches = _lunchRepository.Lunches;
-			lunchListViewModel.CategoryCurrent = "Categoria Atual";
-			return View(lunchListViewModel);
+			if(string.IsNullOrEmpty(category))
+			{
+				lunches = _lunchRepository.Lunches.OrderBy(l => l.Id);
+				category = "Todos os lanches";
+			}
+			else
+			{
+				if(string.Equals("Normal", _category, StringComparison.OrdinalIgnoreCase))
+				{
+					lunches = _lunchRepository.Lunches.Where(l =>
+					l.Category.Name.Equals("Normal")).OrderBy(l => l.Name);
+				}
+				else
+				{
+					lunches = _lunchRepository.Lunches.Where(l =>
+					l.Category.Name.Equals("Natural")).OrderBy(l => l.Name);
+				}
+				categoryCurrent = _category;
+			}
+
+			var lunchesListViewModel = new LunchListViewModel
+			{
+				Lunches = lunches,
+				CategoryCurrent = categoryCurrent
+			};
+
+			return View(lunchesListViewModel);
 		}
     }
 }
