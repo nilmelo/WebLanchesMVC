@@ -65,5 +65,25 @@ namespace WebLanchesMVC.Controllers
 			return View(lunch);
 		}
 
+		public IActionResult Search(string searchString)
+		{
+			string _searchString = searchString;
+			IEnumerable<Lunch> lunches;
+			string _categoryCurrent = string.Empty;
+
+			if(string.IsNullOrEmpty(_searchString))
+			{
+				lunches = _lunchRepository.Lunches.OrderBy(l => l.Id);
+			}
+			else
+			{
+				lunches = _lunchRepository.Lunches.Where(l => l.Name.ToLower().Contains(_searchString.ToLower()));
+			}
+			return View("~/Views/Lunch/List.cshtml", new LunchListViewModel {
+				Lunches = lunches,
+				CategoryCurrent="Todos os lanches"
+			});
+		}
+
     }
 }

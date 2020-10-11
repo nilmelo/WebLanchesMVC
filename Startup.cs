@@ -33,6 +33,8 @@ namespace WebLanchesMVC
 
 			services.AddTransient<ICategoryRepository, CategoryRepository>();
 			services.AddTransient<ILunchRepository, LunchRepository>();
+			services.AddTransient<IOrderRepository, OrderRepository>();
+
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 			services.AddScoped(cp => CartPurchase.GetCart(cp));
