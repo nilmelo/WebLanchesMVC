@@ -34,15 +34,25 @@ namespace WebLanchesMVC.Controllers
 			if(ModelState.IsValid)
 			{
 				_orderRepository.CreateOrder(order);
+
+				ViewBag.CheckoutCompleteMessage = "Obrigado pelo seu pedido!";
+				ViewBag.TotalOrder = _cartPurchase.GetCartPurchaseTotal();
+
 				_cartPurchase.ClearCart();
-				return RedirectToAction("CheckoutComplete");
+				return View("~/Views/Order/CheckoutComplete.cshtml", order);
 			}
 
 			return View(order);
 		}
 
+		// TODO: Verificar se ainda preciso deste método
 		public IActionResult CheckoutComplete()
 		{
+			ViewBag.Client = TempData["Client"];
+			ViewBag.DateOrder = TempData["DateOrder"];
+			ViewBag.NumberOrder = TempData["NumberOrder"];
+			ViewBag.TotalOrder = TempData["TotalOrder"];
+
 			ViewBag.CheckoutCompleteMessage = "Obrigado pelo seu pedido!";
 
 			return View();
