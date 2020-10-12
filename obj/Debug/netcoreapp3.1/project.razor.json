@@ -14460,13 +14460,28 @@
   "RootNamespace": "WebLanchesMVC",
   "Documents": [
     {
+      "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Account\\Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Account\\Logout.cshtml",
+      "TargetPath": "Views\\Account\\Logout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14497,6 +14512,11 @@
     {
       "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Order\\CheckoutComplete.cshtml",
       "TargetPath": "Views\\Order\\CheckoutComplete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {

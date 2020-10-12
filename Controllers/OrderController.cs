@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebLanchesMVC.Models;
 using WebLanchesMVC.Repositories;
@@ -15,12 +16,14 @@ namespace WebLanchesMVC.Controllers
 			_cartPurchase = cartPurchase;
 		}
 
+		[Authorize]
 		public IActionResult Checkout()
 		{
 			return View();
 		}
 
 		[HttpPost]
+		[Authorize]
 		public IActionResult Checkout(Order order)
 		{
 			var items = _cartPurchase.GetCartPurchaseItems();

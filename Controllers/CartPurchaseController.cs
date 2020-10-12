@@ -1,4 +1,5 @@
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebLanchesMVC.Models;
 using WebLanchesMVC.Repositories;
@@ -31,6 +32,7 @@ namespace WebLanchesMVC.Controllers
 			return View(cartPurchaseViewModel);
 		}
 
+		[Authorize]
 		public RedirectToActionResult AddItemInCartPurchase(int lunchId)
 		{
 			var lunchSelected = _lunchRepository.Lunches.FirstOrDefault(p => p.Id == lunchId);
@@ -42,6 +44,7 @@ namespace WebLanchesMVC.Controllers
 			return RedirectToAction("Index");
 		}
 
+		[Authorize]
 		public IActionResult RemoveItemFromCartPurchase(int lunchId)
 		{
 			var lunchSelected = _lunchRepository.Lunches.FirstOrDefault(p => p.Id == lunchId);

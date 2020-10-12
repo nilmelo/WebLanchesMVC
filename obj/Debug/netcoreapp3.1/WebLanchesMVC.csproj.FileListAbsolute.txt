@@ -73,3 +73,14 @@ D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Sh
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Component\CategoryMenu\Default.cshtml.g.cs
 D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Lunch\Details.cshtml.g.cs
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Order\Checkout.cshtml.g.cs
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Order\CheckoutComplete.cshtml.g.cs
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Account\Logout.cshtml.g.cs
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+D:\Nil_HD_2\Websites-ESTUDO\WebLanchesMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
