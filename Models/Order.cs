@@ -7,7 +7,6 @@ namespace WebLanchesMVC.Models
 {
     public class Order
     {
-		[BindNever]
 		public int Id { get; set; }
 
 		public List<OrderDetail> OrderItems { get; set; }
@@ -60,7 +59,14 @@ namespace WebLanchesMVC.Models
 		[BindNever]
 		public decimal OrderTotal { get; set; }
 
-		[BindNever]
+		[Display(Name = "Data/Hora de Recebimento do Pedido")]
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
 		public DateTime OrderSent { get; set; }
+
+		[Display(Name = "Data/Hora de Recebimento do Pedido")]
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
+		public DateTime? OrderDelivered { get; set; }
     }
 }

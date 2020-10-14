@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using WebLanchesMVC.Data;
+using WebLanchesMVC.Extention;
 
 namespace WebLanchesMVC
 {
@@ -13,7 +15,11 @@ namespace WebLanchesMVC
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            // Foi criado um método de extensão(pasta Extention) CreateAdminRole
+			CreateHostBuilder(args)
+				.Build()
+				.CreateAdminRole()
+				.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

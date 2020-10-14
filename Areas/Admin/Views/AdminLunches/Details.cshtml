@@ -1,0 +1,71 @@
+﻿@model WebLanchesMVC.Models.Lunch
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalhes do Lanche</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DescriptionShort)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DescriptionShort)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DescriptionDetail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DescriptionDetail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageURL)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ImageURL)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageThumbnailURL)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ImageThumbnailURL)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsPreferred)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsPreferred)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.InStock)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.InStock)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Category.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar lanche</a> |
+    <a asp-action="Index">Retornar para a Lista</a>
+</div>

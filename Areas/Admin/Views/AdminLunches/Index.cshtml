@@ -1,0 +1,78 @@
+﻿@model IEnumerable<WebLanchesMVC.Models.Lunch>
+<br />
+<br />
+<p>
+    <a asp-action="Create">Incluir Novo Lanche</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DescriptionShort)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DescriptionDetail)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImageURL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImageThumbnailURL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsPreferred)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InStock)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescriptionShort)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescriptionDetail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageURL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageThumbnailURL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsPreferred)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InStock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -346,6 +346,9 @@ namespace WebLanchesMVC.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
+                    b.Property<DateTime?>("OrderDelivered")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime>("OrderSent")
                         .HasColumnType("datetime2");
 

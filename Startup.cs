@@ -36,6 +36,8 @@ namespace WebLanchesMVC
 				.AddEntityFrameworkStores<AppDbContext>()
 				.AddDefaultTokenProviders();
 
+			services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/Home/AccessDenied");
+
 			services.AddTransient<ICategoryRepository, CategoryRepository>();
 			services.AddTransient<ILunchRepository, LunchRepository>();
 			services.AddTransient<IOrderRepository, OrderRepository>();
@@ -64,15 +66,19 @@ namespace WebLanchesMVC
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-			app.UseSession();
-			app.UseAuthentication();
 
             app.UseRouting();
+			app.UseSession();
 
+			app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
+				endpoints.MapControllerRoute(
+                    name: "AdminArea",
+					pattern: "{area:exists}/{Controller=Admin}/{Action=Index}{id?}");
+
 				endpoints.MapControllerRoute(
                     name: "categoryFilter",
 					pattern: "Lunch/{action}/{category?}",

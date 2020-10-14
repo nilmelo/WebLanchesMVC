@@ -16,24 +16,33 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-						@await Component.InvokeAsync("CategoryMenu");
-                        <li>
-                            <a asp-controller="Contact" asp-action="Index">Contato</a>
-                        </li>
-						@await Component.InvokeAsync("CartPurchaseResume")
-                    </ul>
-					@await Html.PartialAsync("_LoginPartial")
-					<form class="navbar-form navbar-right" asp-controller="Lunch" asp-action="Search" method="get">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Procurar lanche" name="searchString" value="@ViewData["searchString"]">
-                        </div>
-                    </form>
-                </div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a asp-controller="Home" asp-action="Index">Home</a>
+							</li>
+							@await Component.InvokeAsync("CategoryMenu");
+							<li>
+								<a asp-controller="Contact" asp-action="Index">Contato</a>
+							</li>
+
+							@if(User.IsInRole("Admin"))
+							{
+								<li><a asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a></li>
+							}
+
+							@if(User.Identity.IsAuthenticated)
+							{
+								@await Component.InvokeAsync("CartPurchaseResume")
+							}
+						</ul>
+						@await Html.PartialAsync("_LoginPartial")
+						<form class="navbar-form navbar-right" asp-controller="Lunch" asp-action="Search" method="get">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Procurar lanche" name="searchString" value="@ViewData["searchString"]">
+							</div>
+						</form>
+					</div>
             </div>
         </nav>
     </header>
