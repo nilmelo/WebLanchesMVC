@@ -12490,6 +12490,38 @@
         }
       },
       {
+        "HashCode": -1981604942,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__PagerViewComponentTagHelper",
+        "AssemblyName": "ReflectionIT.Mvc.Paging",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:pager",
+            "Attributes": [
+              {
+                "Name": "paging-list"
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "MVC.ViewComponent",
+            "Name": "paging-list",
+            "TypeName": "ReflectionIT.Mvc.Paging.IPagingList",
+            "Metadata": {
+              "Common.PropertyName": "pagingList"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__PagerViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "Pager"
+        }
+      },
+      {
         "HashCode": 1912741130,
         "Kind": "Components.Bind",
         "Name": "Bind",

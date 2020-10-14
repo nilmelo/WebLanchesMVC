@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using WebLanchesMVC.Context;
 using WebLanchesMVC.Models;
 using Microsoft.AspNetCore.Authorization;
+using ReflectionIT.Mvc.Paging;
+using Microsoft.AspNetCore.Routing;
 
 namespace WebLanchesMVC.Areas.Admin.Controllers
 {
@@ -23,10 +25,27 @@ namespace WebLanchesMVC.Areas.Admin.Controllers
         }
 
         // GET: Admin/AdminLunches
-        public async Task<IActionResult> Index()
+        // public async Task<IActionResult> Index()
+        // {
+        //     var appDbContext = _context.Lunches.Include(l => l.Category);
+        //     return View(await appDbContext.ToListAsync());
+        // }
+
+		public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Name")
         {
-            var appDbContext = _context.Lunches.Include(l => l.Category);
-            return View(await appDbContext.ToListAsync());
+            var result = _context.Lunches.Include(l => l.Category)
+                           .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(filter))
+            {
+                result = result.Where(p => p.Name.Contains(filter));
+            }
+
+            var model = await PagingList.CreateAsync(result, 5, pageindex, sort, "Name");
+
+            model.RouteValue = new RouteValueDictionary { { "filter", filter } };
+
+            return View(model);
         }
 
         // GET: Admin/AdminLunches/Details/5
