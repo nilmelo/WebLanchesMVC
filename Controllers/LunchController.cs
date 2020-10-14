@@ -21,7 +21,6 @@ namespace WebLanchesMVC.Controllers
 
 		public IActionResult List(string category)
 		{
-			string _category = category;
 			IEnumerable<Lunch> lunches;
 			string categoryCurrent = string.Empty;
 
@@ -32,17 +31,11 @@ namespace WebLanchesMVC.Controllers
 			}
 			else
 			{
-				if(string.Equals("Normal", _category, StringComparison.OrdinalIgnoreCase))
-				{
-					lunches = _lunchRepository.Lunches.Where(l =>
-					l.Category.Name.Equals("Normal")).OrderBy(l => l.Name);
-				}
-				else
-				{
-					lunches = _lunchRepository.Lunches.Where(l =>
-					l.Category.Name.Equals("Natural")).OrderBy(l => l.Name);
-				}
-				categoryCurrent = _category;
+				lunches = _lunchRepository.Lunches
+							.Where(p => p.Category.Name.Equals(category))
+							.OrderBy(p => p.Name);
+
+				categoryCurrent = category;
 			}
 
 			var lunchesListViewModel = new LunchListViewModel
