@@ -10,6 +10,7 @@ using WebLanchesMVC.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Routing;
 using ReflectionIT.Mvc.Paging;
+using WebLanchesMVC.ViewModel;
 
 namespace WebLanchesMVC.Areas.Admin.Controllers
 {
@@ -29,6 +30,26 @@ namespace WebLanchesMVC.Areas.Admin.Controllers
         // {
         //     return View(await _context.Orders.ToListAsync());
         // }
+
+		public IActionResult OrderLunches(int? id)
+		{
+			var order = _context.Orders
+							.Include(or => or.OrderItems)
+							.ThenInclude(l => l.Lunch)
+							.FirstOrDefault(o => o.Id == id);
+
+			if(order == null)
+			{
+				Response.StatusCode = 404;
+				return View("OrderNotFound", id.Value);
+			}
+
+			OrderLunchViewModel orderLunches = new OrderLunchViewModel() {
+				Order = order,
+				OrderDetails = order.OrderItems
+			};
+			return View(orderLunches);
+		}
 
 		public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort ="Name")
 		{

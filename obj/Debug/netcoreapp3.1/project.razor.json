@@ -14587,6 +14587,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Areas\\Admin\\Views\\AdminOrders\\OrderLunches.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\AdminOrders\\OrderLunches.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Areas\\Admin\\Views\\AdminOrders\\Edit.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\AdminOrders\\Edit.cshtml",
       "FileKind": "mvc"
@@ -14604,6 +14609,11 @@
     {
       "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Views\\Order\\CheckoutComplete.cshtml",
       "TargetPath": "Views\\Order\\CheckoutComplete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\Areas\\Admin\\Views\\AdminOrders\\OrderNotFound.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\AdminOrders\\OrderNotFound.cshtml",
       "FileKind": "mvc"
     },
     {
