@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8XSnehqLcJlDm9DdxsLPIQbTpIlC6FZv2cDIYMyHfHNr3VuJNgkGbAQpLXsmmRBKF9oEN+trl33vF4YHe0z6yg==",
+  "dgSpecHash": "OowZQh92+ftrVrnAiJ0EEC2Z1giNFbjBl2eYhe8LhKuLY1T2v2kEcq8hWXU4cQC6CHIYYWkSHJYPHh9d2Nm9kw==",
   "success": true,
-  "projectFilePath": "d:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj",
+  "projectFilePath": "D:\\Nil_HD_2\\Websites-ESTUDO\\WebLanchesMVC\\WebLanchesMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

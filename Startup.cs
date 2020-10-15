@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ReflectionIT.Mvc.Paging;
+using WebLanchesMVC.Areas.Admin.Services;
 using WebLanchesMVC.Context;
 using WebLanchesMVC.Models;
 using WebLanchesMVC.Repositories;
@@ -44,6 +45,8 @@ namespace WebLanchesMVC
 			services.AddTransient<IOrderRepository, OrderRepository>();
 
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+			services.AddScoped<ReportSalesService>();
 
 			services.AddScoped(cp => CartPurchase.GetCart(cp));
             services.AddControllersWithViews();

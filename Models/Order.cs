@@ -59,6 +59,10 @@ namespace WebLanchesMVC.Models
 		[BindNever]
 		public decimal OrderTotal { get; set; }
 
+		[BindNever]
+		[Display(Name = "Itens no Pedido")]
+		public int TotalItemsOrder { get; set; }
+
 		[Display(Name = "Data/Hora de Recebimento do Pedido")]
         [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
